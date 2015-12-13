@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #7B8EA3;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+
+    /*COLOUR SCHEME*/
+    /* #295A8C */
+    /* #0F1E38 */
+    /* #F8FFFF */
+    /* #7B8EA3 */
+    /* #0B081F */
+}
+
+#canvas {
+    width: auto;
+    height: 200px;
+    background: indianred;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    /*border: 1px dashed indianred;*/
+    padding: 150px 0 50px 0;
+}
+
+.login, .signup {
+    outline: none;
+    color: #F8FFFF;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    background: #295A8C;
+    border: 1px solid #295A8C;
+    padding: 10px 50px;
+    margin: 0 20px;
+}
+
+.login:hover, .signup:hover {
+    cursor: pointer;
+    color: #295A8C;
+    background: #FFFFFF;
+    border: 1px dashed #295A8C;
+}
+
+.login {
+    padding: 10px 59.47px;
+}
+
+header {
+    /*border: 1px dashed indianred;*/
+    margin: 0 125px;
+}
+
+header p {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 300;
+    /*border: 1px dashed indianred;*/
+}
