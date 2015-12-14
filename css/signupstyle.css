@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #7B8EA3;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+
+    /*COLOUR SCHEME*/
+    /* #295A8C */
+    /* #0F1E38 */
+    /* #F8FFFF */
+    /* #7B8EA3 */
+    /* #0B081F */
+}
+
+#canvas {
+    width: auto;
+    height: 200px;
+    background: indianred;
+}
+
+header {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.page {
+    border: 1px dashed indianred;
+    padding: 50px 0 50px 0;
+    margin: 0 100px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed indianred;
+}
+
+
+input {
+    outline: none;
+    border: 1px solid #7B8EA3;
+    padding: 10px;
+    margin: 0 300px 25px 300px;
+}
+
+input:hover {
+    border: 1px solid #295A8C;
+}
+
+input:focus {
+    border: 1px solid #295A8C;
+    color: #295A8C;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    outline: none;
+    color: #F8FFFF;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    background: #7B8EA3;
+    border: 1px solid #7B8EA3;
+    padding: 10px 50px;
+    margin: 0 300px;
+}
+
+input[type="submit"]:hover {
+    color: #7B8EA3;
+    background: #FFFFFF;
+    border: 1px dashed #7B8EA3;
+}
