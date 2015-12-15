@@ -14,10 +14,17 @@
     /* #0B081F */
 }
 
-#canvas {
-    width: auto;
+#myCanvas {
+    width: 100%;
     height: 200px;
-    background: indianred;
+    position: relative;
+}
+#header{
+    width: 100%;
+    height: 200px;
+    background: white;
+    position: relative;
+    float: left;
 }
 
 header {

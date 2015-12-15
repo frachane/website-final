@@ -4,9 +4,15 @@
         <title>LISTER FORM</title>
         <link rel="stylesheet" type="text/css" href="css/listerform.css">
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <script>var zon = false; // false for no comments from danzen.js</script>
+        <script type="text/javascript" src="js/zim_1.4.4.js"></script>
+        <script type="text/javascript" src="js/createjs-2015.05.21.min.js"></script>
+        <script type="text/javascript" src="js/listerform.js"></script>
     </head>
     <body>
-        <div id="canvas">YOLO javascript schtuff</div>
+      <div id="header">
+      <canvas id="myCanvas"></canvas>
+      </div>
         <header>
             <a href="php/logout.php" class="logout">LOG OUT</a>
         </header>
@@ -66,15 +72,15 @@
             <div class="second">
                 <h5>How many bedrooms?</h5>
                 <ul>
-                    <li><input type="checkbox" id="" name="1" value="1" />
+                    <li><input type="checkbox" id="oneBed" name="1" value="1" />
                     <label for="1">1</label></li>
-                    <li><input type="checkbox" id="" name="2" value="2" />
+                    <li><input type="checkbox" id="twoBed" name="2" value="2" />
                     <label for="2">2</label></li>
-                    <li><input type="checkbox" id="" name="3" value="3" />
+                    <li><input type="checkbox" id="threeBed" name="3" value="3" />
                     <label for="3">3</label></li>
-                    <li><input type="checkbox" id="" name="4" value="4" />
+                    <li><input type="checkbox" id="fourBed" name="4" value="4" />
                     <label for="4">4</label></li>
-                    <li><input type="checkbox" id="" name="5" value="5" />
+                    <li><input type="checkbox" id="fiveBed" name="5" value="5" />
                     <label for="5">5</label></li>
                 </ul>
 
@@ -90,17 +96,17 @@
 
                 <h5>Do you allow pets at your place?</h5>
                 <ul class="pets">
-                    <li><input type="radio" id="" name="yes" value="yes" />
+                    <li><input type="radio" id="yesPet" name="pets" value="yes" />
                     <label for="yes">YES</label></li>
-                    <li><input type="radio" id="" name="no" value="no" />
+                    <li><input type="radio" id="noPet" name="pets" value="no" />
                     <label for="no">NO</label></li>
                 </ul>
 
                 <h5>Do you allow smoking at your place?</h5>
                 <ul class="smoking">
-                    <li><input type="radio" id="" name="yes" value="yes" />
+                    <li><input type="radio" id="" name="smoke" value="yes" />
                     <label for="yes">YES</label></li>
-                    <li><input type="radio" id="" name="no" value="no" />
+                    <li><input type="radio" id="" name="smoke" value="no" />
                     <label for="no">NO</label></li>
                 </ul>
 
