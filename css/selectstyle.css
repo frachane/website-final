@@ -17,13 +17,21 @@
 #canvas {
     width: auto;
     height: 200px;
-    background: indianred;
 }
 
 header {
-    text-align: center;
+    text-align: right;
+    /*border: 1px dashed indianred;*/
+    margin-right: 100px;
+}
+
+.logout {
     font-weight: 400;
-    font-size: 36px;
+    text-decoration: none;
+}
+
+.logout:hover {
+    color: #0F1E38;
 }
 
 .page {
@@ -63,12 +71,12 @@ button[name=listing]:hover {
 }
 
 .look {
-    border: 1px dashed indianred;
+    /*border: 1px dashed indianred;*/
     padding: 25px 12.5px 50px 125px;
 }
 
 .list {
-    border: 1px dashed indianred;
+    /*border: 1px dashed indianred;*/
     padding: 25px 125px 50px 12.5px;
 }
 

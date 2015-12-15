@@ -21,6 +21,21 @@
 }
 
 header {
+    text-align: right;
+    /*border: 1px dashed indianred;*/
+    margin-right: 100px;
+}
+
+.logout {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.logout:hover {
+    color: #0F1E38;
+}
+
+.instruct {
     text-align: center;
     font-weight: 400;
     font-size: 36px;
