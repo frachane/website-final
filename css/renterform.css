@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #7B8EA3;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+    /*COLOUR SCHEME*/
+    /* #295A8C */
+    /* #0F1E38 */
+    /* #F8FFFF */
+    /* #7B8EA3 */
+    /* #0B081F */
+}
+
+#canvas {
+    width: auto;
+    height: 200px;
+    background: indianred;
+}
+
+header {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+#slider {
+    width: 50px;
+    height: 25px;
+    background: #295A8C;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    /*border: 1px dashed indianred;*/
+}
+
+section {
+    /*border: 1px dashed indianred;*/
+}
+
+h5 {
+    font-size: 20px;
+    /*border: 1px dashed indianred;*/
+    margin: 15px 0 5px 0;
+}
+
+.first {
+    /*border: 1px dashed indianred;*/
+    margin: 25px 12.5px 15px 150px;
+    width: 50%;
+}
+
+.second {
+    /*border: 1px dashed indianred;*/
+    margin: 25px 150px 15px 12.5px;
+    width: 50%;
+}
+
+.submit {
+    /*border: 1px dashed indianred;*/
+    padding: 0 150px 50px 150px;
+    display: flex;
+    justify-content: center;
+    /*width: 100%;*/
+}
+
+input[type=submit] {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    background: #295A8C
+}
+
+.col1, .col2 {
+    /*border: 1px dashed indianred;*/
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    flex-flow: row;
+    /*align-content: flex-start;*/
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*.check, .radio {
+    display: flex;
+    /*align-content: space-between;*/
+/*}*/
+
+.region {
+    width: 80%;
+}
+
+.bath {
+    display: flex;
+    flex-flow: row;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.pets, .smoking {
+    display: flex;
+    flex-flow: row;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 40%;
+}
+
+li {
+    /*border: 1px dashed indianred;*/
+    list-style-type: none;
+    width: 100%;
+}
+
+label {
+    margin-left: 5px;
+}

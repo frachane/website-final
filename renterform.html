@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RENTER FORM</title>
+        <link rel="stylesheet" type="text/css" href="css/renterform.css">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="canvas">YOLO javascript schtuff</div>
+        <header>
+            HEY (PHP name), LET US KNOW WHAT YOU'RE LOOKING FOR
+        </header>
+        <form action="" method="POST" name="">
+        <section class="page">
+            <div class="first">
+                <h5>Price Range:</h5>
+                <div id="slider"></div>
+                    <h5>Location:</h5>
+                    <ul class="region">
+                        <div class="col1">
+                            <li><input type="checkbox" id="" name="" value="Etobicoke" />
+                            <label for="Etobicoke">Etobicoke</label></li>
+                            <li><input type="checkbox" id="" name="" value="York" />
+                            <label for="York">York</label></li>
+                            <li><input type="checkbox" id="" name="" value="North York" />
+                            <label for="North York">North York</label></li>
+                            <li><input type="checkbox" id="" name="" value="Toronto North" />
+                            <label for="Toronto North">Toronto North</label></li>
+                            <li><input type="checkbox" id="" name="" value="Toronto Central" />
+                            <label for="Toronto Central">Toronto Central</label></li>
+                        </div>
+
+                        <div class="col2">
+                            <li><input type="checkbox" id="" name="" value="Toronto West" />
+                            <label for="Toronto West">Toronto West</label></li>
+                            <li><input type="checkbox" id="" name="" value="Toronto East" />
+                            <label for="Toronto East">Toronto East</label></li>
+                            <li><input type="checkbox" id="" name="" value="Downtown Toronto" />
+                            <label for="Downtown Toronto">Downtown Toronto</label></li>
+                            <li><input type="checkbox" id="" name="" value="East York" />
+                            <label for="East York">East York</label></li>
+                            <li><input type="checkbox" id="" name="" value="Scarborough" />
+                            <label for="Scarborough">Scarborough</label></li>
+                        </div>
+                    </ul>
+
+                    <div class="check">
+                    <h5>How many bedrooms?</h5>
+                    <ul>
+                        <li><input type="checkbox" id="" name="1" value="1" />
+                        <label for="1">1</label></li>
+                        <li><input type="checkbox" id="" name="2" value="2" />
+                        <label for="2">2</label></li>
+                        <li><input type="checkbox" id="" name="3" value="3" />
+                        <label for="3">3</label></li>
+                        <li><input type="checkbox" id="" name="4" value="4" />
+                        <label for="4">4</label></li>
+                        <li><input type="checkbox" id="" name="5" value="5" />
+                        <label for="5">5</label></li>
+                    </ul>
+
+                    <h5>How many bathrooms?</h5>
+                    <ul class="bath">
+                        <li><input type="checkbox" id="" name="1" value="1" />
+                        <label for="1">1</label></li>
+                        <li><input type="checkbox" id="" name="2" value="2" />
+                        <label for="2">2</label></li>
+                        <li><input type="checkbox" id="" name="3" value="3" />
+                        <label for="3">3</label></li>
+                    </ul>
+                    </div>
+                </div>
+
+            <div class="second">
+                <h5>Move in Month:</h5>
+                <select name="month" id="month">
+                    <option disabled selected="selected">Select a month...</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <input type="text" name="year" placeholder="ie. 2015" required/>
+
+                <div class="radio">
+                <h5>Do you want a place that allows pets?</h5>
+                <ul class="pets">
+                    <li><input type="radio" id="" name="yes" value="yes" />
+                    <label for="yes">YES</label></li>
+                    <li><input type="radio" id="" name="no" value="no" />
+                    <label for="no">NO</label></li>
+                </ul>
+
+                <h5>Do you want a place that allows smoking?</h5>
+                <ul class="smoking">
+                    <li><input type="radio" id="" name="yes" value="yes" />
+                    <label for="yes">YES</label></li>
+                    <li><input type="radio" id="" name="no" value="no" />
+                    <label for="no">NO</label></li>
+                </ul>
+                </div>
+
+                <h5>Additional Comments:</h5>
+                <textarea name="interests" id="comments" style="resize:rowsb" rows="5" cols="76" placeholder="ex. sunlight, window view, balcony, floor level"></textarea>
+
+            </div>
+        </section>
+
+        <section class="submit">
+            <input type="submit" name="submit" value="SUBMIT" />
+        </section>
+
+        </form>
+    </body>
+</html>

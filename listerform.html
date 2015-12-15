@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LISTER FORM</title>
+        <link rel="stylesheet" type="text/css" href="css/listerform.css">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="canvas">YOLO javascript schtuff</div>
+        <header>
+            HEY (PHP name), LET US KNOW WHAT YOU'RE LISTING
+        </header>
+        <form action="" method="POST" name="">
+        <section class="page">
+            <div class="first">
+                <h5>Price:</h5>
+                <input type="text" name="price" placeholder="$890" required/>/MONTH
+                <h5>Address:</h5>
+                <input type="text" name="address" placeholder="683 Yonge Street" required/>
+                <div class="place">
+                    <div class="col1">
+                        <h5>Region:</h5>
+                        <select name="region" id="region">
+                            <option disabled selected="selected">Select the Region...</option>
+                            <option value="Etobicoke">Etobicoke</option>
+                            <option value="York">York</option>
+                            <option value="North York">North York</option>
+                            <option value="Toronto North">Toronto North</option>
+                            <option value="Toronto Central">Toronto Central</option>
+                            <option value="Toronto West">Toronto West</option>
+                            <option value="Toronto East">Toronto East</option>
+                            <option value="Downtown Toronto">Downtown Toronto</option>
+                            <option value="East York">East York</option>
+                            <option value="Scarborough">Scarborough</option>
+                        </select>
+                    </div>
+                    <div class="col2">
+                        <h5>Postal Code:</h5>
+                        <input type="text" name="postal" placeholder="M4V 1V9" required/>
+                    </div>
+                </div>
+                <h5>Move in Month:</h5>
+                <select name="month" id="month">
+                    <option disabled selected="selected">Select a month...</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+
+                <h5>Phone Number (optional):</h5>
+                <input type="text" name="postal" placeholder="(647) 123-4567"/>
+            </div>
+
+            <div class="second">
+                <h5>How many bedrooms?</h5>
+                <ul>
+                    <li><input type="checkbox" id="" name="1" value="1" />
+                    <label for="1">1</label></li>
+                    <li><input type="checkbox" id="" name="2" value="2" />
+                    <label for="2">2</label></li>
+                    <li><input type="checkbox" id="" name="3" value="3" />
+                    <label for="3">3</label></li>
+                    <li><input type="checkbox" id="" name="4" value="4" />
+                    <label for="4">4</label></li>
+                    <li><input type="checkbox" id="" name="5" value="5" />
+                    <label for="5">5</label></li>
+                </ul>
+
+                <h5>How many bathrooms?</h5>
+                <ul class="bath">
+                    <li><input type="checkbox" id="" name="1" value="1" />
+                    <label for="1">1</label></li>
+                    <li><input type="checkbox" id="" name="2" value="2" />
+                    <label for="2">2</label></li>
+                    <li><input type="checkbox" id="" name="3" value="3" />
+                    <label for="3">3</label></li>
+                </ul>
+
+                <h5>Do you allow pets at your place?</h5>
+                <ul class="pets">
+                    <li><input type="radio" id="" name="yes" value="yes" />
+                    <label for="yes">YES</label></li>
+                    <li><input type="radio" id="" name="no" value="no" />
+                    <label for="no">NO</label></li>
+                </ul>
+
+                <h5>Do you allow smoking at your place?</h5>
+                <ul class="smoking">
+                    <li><input type="radio" id="" name="yes" value="yes" />
+                    <label for="yes">YES</label></li>
+                    <li><input type="radio" id="" name="no" value="no" />
+                    <label for="no">NO</label></li>
+                </ul>
+
+
+                <h5>Additional Comments:</h5>
+                <textarea name="interests" id="comments" style="resize:rowsb" rows="5" cols="76" placeholder="ex. sunlight, window view, balcony, floor level"></textarea>
+            </div>
+        </section>
+
+        <section class="submit">
+            <input type="submit" name="submit" value="SUBMIT" />
+        </section>
+
+        </form>
+    </body>
+</html>

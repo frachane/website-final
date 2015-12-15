@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #7B8EA3;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+
+    /*COLOUR SCHEME*/
+    /* #295A8C */
+    /* #0F1E38 */
+    /* #F8FFFF */
+    /* #7B8EA3 */
+    /* #0B081F */
+}
+
+#canvas {
+    width: auto;
+    height: 200px;
+    background: indianred;
+}
+
+header {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*border: 1px dashed indianred;*/
+}
+
+button {
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    color: #F8FFFF;
+    font-size: 24px;
+    font-weight: 400;
+    background: #295A8C;
+    border: 1px solid #295A8C;
+    padding: 10px 50px;
+
+}
+
+button[name=listing] {
+    background: #0F1E38;
+}
+
+button[name=looking]:hover {
+    color: #295A8C;
+    background: #FFFFFF;
+    border: 1px dashed #295A8C;
+}
+
+button[name=listing]:hover {
+    color: #0F1E38;
+    background: #FFFFFF;
+    border: 1px dashed #0F1E38;
+}
+
+.look {
+    border: 1px dashed indianred;
+    padding: 25px 12.5px 50px 125px;
+}
+
+.list {
+    border: 1px dashed indianred;
+    padding: 25px 125px 50px 12.5px;
+}
+
+p {
+    padding: 20px 0 0 0;
+}
