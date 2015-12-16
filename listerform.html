@@ -3,7 +3,7 @@
     <head>
         <title>LISTER FORM</title>
         <link rel="stylesheet" type="text/css" href="css/listerform.css">
-        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
         <script>var zon = false; // false for no comments from danzen.js</script>
         <script type="text/javascript" src="js/zim_1.4.4.js"></script>
         <script type="text/javascript" src="js/createjs-2015.05.21.min.js"></script>
@@ -19,11 +19,11 @@
         <section class="instruct">
             HEY (PHP name), LET US KNOW WHAT YOU'RE LISTING
         </section>
-        <form action="" method="POST" name="">
+        <form action="lister.php" method="POST" name="listerForm">
         <section class="page">
             <div class="first">
                 <h5>Price:</h5>
-                <input type="text" name="price" placeholder="$890" required/>/MONTH
+                <input type="text" name="amount" maxlength = "11" placeholder="$890" required/>/MONTH
                 <h5>Address:</h5>
                 <input type="text" name="address" placeholder="683 Yonge Street" required/>
                 <div class="place">
@@ -45,10 +45,10 @@
                     </div>
                     <div class="col2">
                         <h5>Postal Code:</h5>
-                        <input type="text" name="postal" placeholder="M4V 1V9" required/>
+                        <input type="text" name="postal" placeholder="M4V1V9" maxlength="7" required/>
                     </div>
                 </div>
-                <h5>Move in Month:</h5>
+                <h5>Move in Date:</h5>
                 <select name="month" id="month">
                     <option disabled selected="selected">Select a month...</option>
                     <option value="January">January</option>
@@ -64,55 +64,56 @@
                     <option value="November">November</option>
                     <option value="December">December</option>
                 </select>
+                <input type="text" id="year" name="year" maxlength = "4" placeholder="2016">
 
                 <h5>Phone Number (optional):</h5>
-                <input type="text" name="postal" placeholder="(647) 123-4567"/>
+                <input type="text" name="phone" placeholder="(647) 123-4567"/>
             </div>
 
             <div class="second">
                 <h5>How many bedrooms?</h5>
                 <ul>
-                    <li><input type="checkbox" id="oneBed" name="1" value="1" />
+                    <li><input type="radio" id="oneBed" name="bedrooms" value="1" />
                     <label for="1">1</label></li>
-                    <li><input type="checkbox" id="twoBed" name="2" value="2" />
+                    <li><input type="radio" id="twoBed" name="bedrooms" value="2" />
                     <label for="2">2</label></li>
-                    <li><input type="checkbox" id="threeBed" name="3" value="3" />
+                    <li><input type="radio" id="threeBed" name="bedrooms" value="3" />
                     <label for="3">3</label></li>
-                    <li><input type="checkbox" id="fourBed" name="4" value="4" />
+                    <li><input type="radio" id="fourBed" name="bedrooms" value="4" />
                     <label for="4">4</label></li>
-                    <li><input type="checkbox" id="fiveBed" name="5" value="5" />
+                    <li><input type="radio" id="fiveBed" name="bedrooms" value="5" />
                     <label for="5">5</label></li>
                 </ul>
 
                 <h5>How many bathrooms?</h5>
                 <ul class="bath">
-                    <li><input type="checkbox" id="" name="1" value="1" />
+                    <li><input type="radio" id="" name="bathrooms" value="1" />
                     <label for="1">1</label></li>
-                    <li><input type="checkbox" id="" name="2" value="2" />
+                    <li><input type="radio" id="" name="bathrooms" value="2" />
                     <label for="2">2</label></li>
-                    <li><input type="checkbox" id="" name="3" value="3" />
+                    <li><input type="radio" id="" name="bathrooms" value="3" />
                     <label for="3">3</label></li>
                 </ul>
 
                 <h5>Do you allow pets at your place?</h5>
                 <ul class="pets">
-                    <li><input type="radio" id="yesPet" name="pets" value="yes" />
+                    <li><input type="radio" id="yesPet" name="pets" value="yes"/>
                     <label for="yes">YES</label></li>
-                    <li><input type="radio" id="noPet" name="pets" value="no" />
+                    <li><input type="radio" id="noPet" name="pets" value="no"/>
                     <label for="no">NO</label></li>
                 </ul>
 
                 <h5>Do you allow smoking at your place?</h5>
                 <ul class="smoking">
-                    <li><input type="radio" id="" name="smoke" value="yes" />
+                    <li><input type="radio" id="yesSmoke" name="smoking" value="yes"/>
                     <label for="yes">YES</label></li>
-                    <li><input type="radio" id="" name="smoke" value="no" />
+                    <li><input type="radio" id="noSmoke" name="smoking" value="no"/>
                     <label for="no">NO</label></li>
                 </ul>
 
 
                 <h5>Additional Comments:</h5>
-                <textarea name="interests" id="comments" style="resize:rowsb" rows="5" cols="76" placeholder="ex. sunlight, window view, balcony, floor level"></textarea>
+                <textarea name="comments" id="comment" style="resize:none" rows="5" cols="76" placeholder="ex. sunlight, window view, balcony, floor level"></textarea>
             </div>
         </section>
 
