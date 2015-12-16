@@ -4,6 +4,7 @@
     color: #7B8EA3;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
+    font-size: 16px;
 
     /*COLOUR SCHEME*/
     /* #295A8C */
@@ -13,41 +14,50 @@
     /* #0B081F */
 }
 
-#canvas {
-    width: auto;
-    height: 200px;
-}
-
+/* LINK TO ACCOUNT PAGE AND LOGOUT SESSION */
 header {
     text-align: right;
     /*border: 1px dashed indianred;*/
-    margin-right: 100px;
+    margin: 5px 100px 50px 0;
 }
 
-.logout {
+.account, .logout {
     font-weight: 400;
     text-decoration: none;
+}
+
+.account:hover {
+    color: #295A8C;
 }
 
 .logout:hover {
     color: #0F1E38;
 }
 
+/* JAVASCRIPT CANVAS */
+#canvas {
+    /*margin: auto;*/
+    width: auto;
+    height: 200px;
+    /*background: indianred;*/
+}
+
+/* LOGIN AND SIGN UP BUTTON LINKS */
 .buttons {
     display: flex;
     justify-content: center;
     /*border: 1px dashed indianred;*/
-    padding: 150px 0 50px 0;
+    padding: 100px 0 50px 0;
 }
 
 .login, .signup {
     outline: none;
     color: #F8FFFF;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     text-decoration: none;
     background: #295A8C;
-    border: 1px solid #295A8C;
+    border: 2px solid #295A8C;
     padding: 10px 50px;
     margin: 0 20px;
 }
@@ -56,21 +66,42 @@ header {
     cursor: pointer;
     color: #295A8C;
     background: #FFFFFF;
-    border: 1px dashed #295A8C;
+    border: 2px dashed #295A8C;
+}
+
+.login:focus, .signup:focus {
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #0F1E38;
+    border: 2px solid #0F1E38;
 }
 
 .login {
     padding: 10px 59.47px;
 }
 
+/* SHORT SUMMARY */
 .info {
     /*border: 1px dashed indianred;*/
-    margin: 0 125px;
+    margin: 0 250px;
 }
 
 .info p {
-    text-align: left;
-    font-size: 22px;
-    font-weight: 300;
+    text-align: center;
+    font-size: 19px;
+    padding: 0 0 10px 0;
     /*border: 1px dashed indianred;*/
+}
+
+span {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.rent {
+    color: #0F1E38;
+}
+
+.mail {
+    color: #295A8C;
 }

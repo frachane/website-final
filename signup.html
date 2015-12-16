@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sign Up</title>
+        <title>RentMail | Make an Account</title>
         <link rel="stylesheet" type="text/css" href="css/signupstyle.css">
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="images/RMfav.png" type="image/png" sizes="16x16">
     </head>
     <body>
-        <div id="canvas">YOLO javascript schtuff</div>
-        <header>CREATE AN ACCOUNT!</header>
+<!-- LINK TO ACCOUNT PAGE AND LOGOUT SESSION -->
+        <header>
+            <a href="account.html" class="account">ACCOUNT</a> |
+            <a href="php/logout.php" class="logout">LOG OUT</a>
+        </header>
+<!-- LOGO AND SKYLINE IMG -->
+        <div id="canvas">
+            <img src="images/Rentmail_Logo-01.png" alt="rentmail logo" />
+        </div>
+<!-- SIGN UP SECTION -->
         <section class="page">
+            <p>
+                MAKE AN ACCOUNT
+            </p>
             <form class="signup" action="" method="POST">
                 <input type="text" placeholder="First Name" required />
                 <input type="text" placeholder="Last Name" required />

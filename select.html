@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Select One</title>
+        <title>RentMail | Select One</title>
         <link rel="stylesheet" type="text/css" href="css/selectstyle.css">
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="images/RMfav.png" type="image/png" sizes="16x16">
     </head>
     <body>
-        <div id="canvas"></div>
+<!-- LINK TO ACCOUNT PAGE AND LOGOUT SESSION -->
         <header>
+            <a href="account.html" class="account">ACCOUNT</a> |
             <a href="php/logout.php" class="logout">LOG OUT</a>
         </header>
+<!-- LOGO AND SKYLINE IMG -->
+        <div id="canvas">
+            <img src="images/Rentmail_Logo-01.png" alt="rentmail logo" />
+        </div>
+<!-- INFORMATION SECTION -->
         <section class="page">
-            <div class="look">
-                <img src="http://placecorgi.com/180/180" />
-                <button type="button" name="looking">LOOKING</button>
-                <p>
-                    Actually literally locavore everyday carry. Intelligentsia gastropub iPhone kinfolk yr, readymade microdosing small batch ugh. Pop-up poutine mumblecore knausgaard pour-over. Before they sold out hammock flannel, ethical portland skateboard roof party trust fund. Food truck hammock kitsch, pop-up health goth craft beer pabst echo park migas butcher. Pickled scenester semiotics cardigan flannel ennui pug. Semiotics craft beer vegan dreamcatcher, umami ethical letterpress pug cliche readymade kitsch scenester selfies.
-                </p>
+            <div class="img">
+                <img src="images/mag_looking-01.png" alt="look rent" />
+                <img src="images/post_listing-01.png" alt="post listing" />
             </div>
-            <div class="list">
-                <img src="http://placecorgi.com/180/180" />
-                <button type="button" name="listing">LISTING</button>
-                <p>
-                    Actually literally locavore everyday carry. Intelligentsia gastropub iPhone kinfolk yr, readymade microdosing small batch ugh. Pop-up poutine mumblecore knausgaard pour-over. Before they sold out hammock flannel, ethical portland skateboard roof party trust fund. Food truck hammock kitsch, pop-up health goth craft beer pabst echo park migas butcher. Pickled scenester semiotics cardigan flannel ennui pug. Semiotics craft beer vegan dreamcatcher, umami ethical letterpress pug cliche readymade kitsch scenester selfies.
-                </p>
+            <div class="select">
+<!-- "LOOKING" SELECTION -->
+                <div class="look">
+                    <a href="renterform.html" class="looking">LOOKING</a>
+                </div>
+<!-- "LISTING" SELECTION -->
+                <div class="list">
+                    <a href="listerform.html" class="listing">LISTING</a>
+                </div>
             </div>
         </section>
     </body>
