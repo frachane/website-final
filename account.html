@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RentMail | Account Page</title>
+        <link rel="stylesheet" type="text/css" href="css/accountpage.css">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="images/RMfav.png" type="image/png" sizes="16x16">
+        <script>
+        // var account = document.querySelector('.acc');
+        // var accountinfo = document.querySelector('.accountinfo');
+        //
+        // window.addEventListener("load", function() {
+        //     var account = document.querySelector('.acc');
+        //     var accountinfo = document.querySelector('.accountinfo');
+        //
+        //     account.style.background = "white";
+        //     account.style.color = "#7B8EA3";
+        //     account.style.borderLeft = "10px solid #7B8EA3";
+        //     account.style.fontWeight = "400";
+        //     accountinfo.style.display = "block";
+        //
+        //
+        //
+        //
+        //     var looking = document.querySelector('.loo');
+        //     var lookinfo = document.querySelector('.lookinfo');
+        //
+        //     looking.addEventListener('click', appearLook);
+        //
+        //     function appearLook() {
+        //         looking.style.background = "white";
+        //         looking.style.color = "#295A8C";
+        //         looking.style.borderLeft = "10px solid #295A8C";
+        //         looking.style.fontWeight = "400";
+        //         lookinfo.style.display = "block";
+        //
+        //     }
+        //
+        //
+        //
+        //     var listing = document.querySelector('.lis');
+        //     var listinfo = document.querySelector('.listinfo');
+        //
+        //     listing.addEventListener('click', appearList);
+        //
+        //     function appearList() {
+        //         listing.style.background = "white";
+        //         listing.style.color = "#0F1E38";
+        //         listing.style.borderLeft = "10px solid #0F1E38";
+        //         listing.style.fontWeight = "400";
+        //         listinfo.style.display = "block";
+        //
+        //     }
+        //
+        //
+        // });
+
+
+
+
+
+
+        </script>
+
+
+
+
+    </head>
+    <body>
+<!-- LINK TO ACCOUNT PAGE AND LOGOUT SESSION -->
+        <header>
+            <a href="account.html" class="account">ACCOUNT</a> |
+            <a href="php/logout.php" class="logout">LOG OUT</a>
+                </header>
+<!-- LOGO AND SKYLINE IMG -->
+        <div id="canvas">
+            <img src="images/Rentmail_Logo-01.png" alt="rentmail logo" />
+        </div>
+
+        <section class="page">
+<!-- NAVIGATION BAR -->
+            <div class="tabs">
+                <ul>
+                    <li class="loo">LOOKING</li>
+                    <li class="lis">LISTING</li>
+                    <li class="acc">ACCOUNT SETTINGS</li>
+                </ul>
+            </div>
+<!-- INFORMATION SECTION -->
+            <div class="info">
+<!-- RENTER REQUESTED ROOM REQUIREMENTS SUMMARY -->
+                <div class="lookinfo">
+                    <p>
+                        SUMMARY OF REQUESTED REQUIREMENTS
+                    </p>
+                    <div class="button">
+                        <button type="edit" name="edit">EDIT REQUIREMENTS</button>
+                    </div>
+                </div>
+<!-- LISTER ROOM LISTING(S) -->
+                <div class="listinfo">
+                    <div class="button">
+                        <button type="add" name="add">+ NEW LISTING</button>
+                    </div>
+                    <div class="listings">
+                        <p>
+                            Actually literally locavore everyday carry. Intelligentsia gastropub iPhone kinfolk yr, readymade microdosing small batch ugh. Pop-up poutine mumblecore knausgaard pour-over. Before they sold out hammock flannel, ethical portland skateboard roof party trust fund. Food truck hammock kitsch, pop-up health goth craft beer pabst echo park migas butcher. Pickled scenester semiotics cardigan flannel ennui pug. Semiotics craft beer vegan dreamcatcher, umami ethical letterpress pug cliche readymade kitsch scenester selfies.
+                        </p>
+                        <button type="editlist" name="edit">EDIT LISTING</button>
+                    </div>
+                </div>
+<!-- ACCOUNT SETTINGS -->
+                <div class="accountinfo">
+                    <h5>CURRENT EMAIL:</h5>
+                    <p>
+                        (PHP of current email)
+                    </p>
+                    <h5>NEW EMAIL:</h5>
+                    <p>
+                        (text input field to enter new email)
+                    </p>
+                    <h5>CURRENT PASSWORD:</h5>
+                    <p>
+                        (PHP of current password)
+                    </p>
+                    <h5>NEW PASSWORD:</h5>
+                    <p>
+                        (text input field to enter new password)
+                    </p>
+<!-- DISABLE LINK AND INFORMATION HOVER -->
+                    <div class="disable">
+                        <span>DISABLE ACCOUNT</span>
+                        <div class="dropdown">
+                            <p>
+                                If you have found a place or would like to stop receiving emails about new listings, you can disable your account by clicking this link!
+                            </p>
+                            <p>
+                                To enable it, just log back in!
+                            </p>
+                        </div>
+                    </div>
+                    <button type="save" name="save">SAVE CHANGES</button>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #7B8EA3;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+    /*COLOUR SCHEME*/
+    /* #295A8C */
+    /* #0F1E38 */
+    /* #F8FFFF */
+    /* #7B8EA3 */
+    /* #0B081F */
+}
+
+/* LINK TO ACCOUNT PAGE AND LOGOUT SESSION */
+header {
+    text-align: right;
+    /*border: 1px dashed indianred;*/
+    margin: 5px 100px 50px 0;
+}
+
+.account, .logout {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.account:hover {
+    color: #295A8C;
+}
+
+.logout:hover {
+    color: #0F1E38;
+}
+
+/* LOGO AND SKYLINE IMG */
+#canvas {
+    width: 100%
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    /*border: 1px dashed indianred;*/
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    /*border: 1px dashed indianred;*/
+}
+
+/* MAIN  */
+.page {
+    /*border: 1px dashed indianred;*/
+    margin: 15px 150px 0 150px;
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* NAVIGATION BAR */
+.tabs {
+    /*border: 1px dashed indianred;*/
+    width: 30%;
+}
+
+li {
+    list-style: none;
+    border: 1px solid #E5E5E5;
+    background: #E5E5E5;
+    padding: 15px;
+}
+
+li:hover {
+    cursor: pointer;
+    background: white;
+    border: 1px solid #E5E5E5;
+    font-weight: 400;
+}
+
+.loo:hover {
+    border-left: 10px solid #295A8C;
+}
+
+.lis:hover {
+    border-left: 10px solid #0F1E38;
+}
+
+.acc:hover {
+    border-left: 10px solid #7B8EA3;
+}
+
+/* INFORMATION SECTION */
+.info {
+    /*border: 1px solid indianred;*/
+    width: 70%;
+    background: white;
+}
+
+.lookinfo p, .listings, .accountinfo {
+    border: 1px solid #CFCFCF;
+    background: white;
+    padding: 15px;
+    margin: 0 0 15px 15px;
+    box-shadow: 0 5px 6px -6px grey;
+}
+
+/* DISPLAY INFORMATION */
+.lookinfo {
+    /*display: none;*/
+}
+
+.listinfo {
+    display: none;
+}
+
+.accountinfo {
+    display: none;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.accountinfo p {
+    margin: 0 0 15px 0;
+}
+
+/* BUTTON STYLING */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    outline: none;
+}
+
+button[type="edit"] {
+    background: #295A8C;
+    border: 1.5px solid #295A8C;
+}
+
+.button {
+    margin: 0 0 15px 15px;
+}
+
+button[type="add"] {
+    background: #0F1E38;
+    border: 1.5px solid #0F1E38;
+}
+
+button[type="editlist"], button[type="save"] {
+    background: #7B8EA3;
+    border: 1.5px solid #7B8EA3;
+    margin-top: 15px;
+}
+
+button[type="edit"]:hover {
+    color: #295A8C;
+    background: #FFFFFF;
+    border: 1.5px dashed #295A8C;
+}
+
+button[type="add"]:hover {
+    color: #0F1E38;
+    background: #FFFFFF;
+    border: 1.5px dashed #0F1E38;
+}
+
+button[type="editlist"]:hover, button[type="save"]:hover {
+    color: #7B8EA3;
+    background: #FFFFFF;
+    border: 1.5px dashed #7B8EA3;
+}
+
+button[type="editlist"]:focus{
+    color: #FFFFFF;
+    background: #0F1E38;
+    border: 1.5px solid #0F1E38;
+}
+
+button[type="save"]:focus {
+    color: #FFFFFF;
+    background: #295A8C;
+    border: 1.5px solid #295A8C;
+}
+
+button[type="edit"]:focus, button[type="add"]:focus {
+    color: #FFFFFF;
+    background: #7B8EA3;
+    border: 1.5px solid #7B8EA3;
+}
+
+/* DISABLE LINK INFORMATION HOVER */
+.disable {
+    display: inline-block;
+    /*border: 1px dashed indianred;*/
+}
+
+span {
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+    margin: 0 0 5px 0;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 455px;
+    left: 243px;
+    background: white;
+    width: 200px;
+    border: 1px solid #CFCFCF;
+    box-shadow: 0 5px 6px -6px grey;
+}
+
+.dropdown p {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.disable:hover .dropdown {
+    display: block;
+    color: #0F1E38;
+}
+
+span:hover {
+    color: #0F1E38;
+}
