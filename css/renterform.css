@@ -31,7 +31,7 @@ header {
 }
 
 /* JAVASCRIPT CANVAS */
-#canvas {
+#myCanvas {
     width: auto;
     height: 200px;
     /*background: indianred;*/
