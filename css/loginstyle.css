@@ -14,24 +14,9 @@
     /* #0B081F */
 }
 
-/* LINK TO ACCOUNT PAGE AND LOGOUT SESSION */
 header {
-    text-align: right;
     /*border: 1px dashed indianred;*/
-    margin: 5px 100px 50px 0;
-}
-
-.account, .logout {
-    font-weight: 400;
-    text-decoration: none;
-}
-
-.account:hover {
-    color: #295A8C;
-}
-
-.logout:hover {
-    color: #0F1E38;
+    margin: 0 0 76px 0;
 }
 
 /* LOGO AND SKYLINE IMG */

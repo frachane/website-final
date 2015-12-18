@@ -14,124 +14,91 @@
     /* #0B081F */
 }
 
-#canvas {
-    width: auto;
-    height: 200px;
-    background: indianred;
-}
-
+/* LINK TO ACCOUNT PAGE AND LOGOUT SESSION */
 header {
     text-align: right;
     /*border: 1px dashed indianred;*/
-    margin-right: 100px;
+    margin: 5px 100px 50px 0;
 }
 
-.logout {
+.account, .logout {
     font-weight: 400;
     text-decoration: none;
+}
+
+.account:hover {
+    color: #295A8C;
 }
 
 .logout:hover {
     color: #0F1E38;
 }
 
+/* JAVASCRIPT CANVAS */
+#canvas {
+    width: auto;
+    height: 200px;
+    /*background: indianred;*/
+}
+
+/* INSTRUCTIONS */
 .instruct {
-    text-align: center;
+    margin: 0 150px;
+}
+
+.instruct p, .instruct span {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 24px;
+    color: #295A8C;
 }
 
-#slider {
-    width: 50px;
-    height: 25px;
-    background: #295A8C;
+.instruct p {
+    padding: 15px 0 0 0;
 }
 
+.instruct span {
+    display: block;
+}
+
+/* OVERALL PAGE LAYOUT AND STYLING */
 .page {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    /*border: 1px dashed indianred;*/
-}
-
-section {
-    /*border: 1px dashed indianred;*/
+    border: 1px dashed indianred;
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
     /*border: 1px dashed indianred;*/
     margin: 15px 0 5px 0;
 }
 
 .first {
-    /*border: 1px dashed indianred;*/
-    margin: 25px 12.5px 15px 150px;
+    border: 1px dashed indianred;
+    margin: 0 12.5px 15px 150px;
     width: 50%;
 }
 
 .second {
-    /*border: 1px dashed indianred;*/
-    margin: 25px 150px 15px 12.5px;
+    border: 1px dashed indianred;
+    margin: 0 150px 15px 12.5px;
     width: 50%;
-}
-
-.submit {
-    /*border: 1px dashed indianred;*/
-    padding: 0 150px 50px 150px;
-    display: flex;
-    justify-content: center;
-    /*width: 100%;*/
-}
-
-input[type=submit] {
-    cursor: pointer;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    font-size: 24px;
-    font-weight: 400;
-    color: white;
-    background: #295A8C
 }
 
 .col1, .col2 {
-    /*border: 1px dashed indianred;*/
+    border: 1px dashed indianred;
     width: 50%;
 }
 
+/* OVERALL UNORDERED LIST AND LISTED LAYOUT AND STYLING */
 ul {
     display: flex;
     flex-flow: row;
-    /*align-content: flex-start;*/
     justify-content: space-between;
     width: 100%;
-}
-
-/*.check, .radio {
-    display: flex;
-    /*align-content: space-between;*/
-/*}*/
-
-.region {
-    width: 80%;
-}
-
-.bath {
-    display: flex;
-    flex-flow: row;
-    align-content: flex-start;
-    justify-content: space-between;
-    width: 60%;
-}
-
-.pets, .smoking {
-    display: flex;
-    flex-flow: row;
-    align-content: flex-start;
-    justify-content: space-between;
-    width: 40%;
 }
 
 li {
@@ -142,4 +109,259 @@ li {
 
 label {
     margin-left: 5px;
+}
+
+/* PRICE SLIDER */
+#price {
+    width: 39%;
+    height: 4px;
+    margin: 15px 0 0 0;
+    background: #FFF;
+    border: 1.5px solid #7B8EA3;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+#amount {
+    border: none;
+    cursor: default;
+    color: #295A8C;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    width: auto;
+    position: relative;
+    bottom: 48px;
+    left: 80px;
+}
+
+.ui-slider .ui-slider-handle {
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    background: #295A8C;
+    border: 1px solid #295A8C;
+    position: absolute;
+    margin-bottom: 50px;
+}
+
+.ui-slider .ui-slider-range {
+    background: #295A8C;
+    border: 1.5px solid #295A8C;
+}
+
+.ui-slider .ui-slider-handle:hover {
+  /*opacity: .8;*/
+  background: #295A8C;
+  border: 1px solid #295A8C;
+}
+
+.ui-slider .ui-slider-handle:focus {
+  /*opacity: .8;*/
+  background: #295A8C;
+  border: 1px solid #295A8C;
+}
+
+/* LOCATION */
+.region {
+    width: 80%;
+}
+
+/* MOVE IN DATE ~ SELECTION */
+.movein {
+    /*border: 1px dashed indianred;*/
+    width: 100%;
+    /*padding: 5px;*/
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.date {
+    /*border: 1px dashed indianred;*/
+    width: 50%;
+    padding: 0 5px 0 0;
+}
+
+.year {
+    /*border: 1px dashed indianred;*/
+    width: 50%;
+    padding: 0 0 0 5px;
+}
+
+select {
+    cursor: pointer;
+    outline: none;
+    color: #7B8EA3;
+    background: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #7B8EA3;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+select:hover {
+    border: 1.5px solid #295A8C;
+}
+
+/* CHECKBOX, RADIO BUTTON, TEXT INPUT, TEXT AREA STYLING*/
+input[type="radio"] {
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="checkbox"]:not(:checked),
+input[type="checkbox"]:checked, input[type="radio"]:not(:checked),
+input[type="radio"]:checked {
+    position: absolute;
+}
+
+input[type="checkbox"]:not(:checked) + label,
+input[type="checkbox"]:checked + label, input[type="radio"]:not(:checked) + label,
+input[type="radio"]:checked + label {
+    position: relative;
+    cursor: pointer;
+    color: #7B8EA3;
+    width: 90%;
+    float: left;
+    margin-bottom: 2px;
+    padding-left: 20px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+    opacity:0;
+}
+
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="checkbox"]:checked + label:before, input[type="radio"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before {
+    content: '';
+    cursor: pointer;
+    color: #7B8EA3;
+    position: absolute;
+    left: -6px;
+    display: inline-block;
+    width: 10px; height: 10px;
+    float: left;
+    background: #FFFFFF;
+    border: 1.5px solid #7B8EA3;
+    padding: 3px;
+}
+
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="checkbox"]:checked + label:after, input[type="radio"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after {
+    content: '';
+    font-size: 18px;
+    transition: all .2s;
+    cursor: pointer;
+    position: absolute;
+    left: -6px;
+    width: 10px; height: 10px;
+    float: left;
+    background: #295A8C;
+    border: 1.5px solid #295A8C;
+    padding: 3px;
+}
+
+input[type="checkbox"]:not(:checked) + label:after, input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+input[type="checkbox"]:checked + label:after, input[type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
+    font-weight: bolder;
+    color: #295A8C;
+}
+
+input[type="radio"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before, input[type="radio"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after {
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    outline: none;
+    width: 90%;
+    border: 1.5px solid #7B8EA3;
+    padding: 10px;
+}
+
+input[type="text"]:hover, input[type="text"]:focus, #comment:hover, #comment:focus {
+    color: #295A8C;
+    background: #FFFFFF;
+    border: 1.5px solid #295A8C;
+}
+
+input[type="text"]:focus, #comment:focus {
+    font-weight: 400;
+    outline: none;
+}
+
+/* BATHROOMS, PETS, SMOKING */
+.bath, .pets, .smoking {
+    display: flex;
+    flex-flow: row;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.bath {
+    width: 60%;
+}
+
+.pets, .smoking {
+    width: 40%;
+}
+
+/* ADDITIONAL COMMENTS ~ TEXT AREA */
+.comment {
+    display: flex;
+}
+
+#comment {
+    resize: inherit;
+    width: 100%
+    outline: none;
+    border: 1.5px solid #7B8EA3;
+    padding: 10px;
+}
+
+/* SUBMIT TO DATABASE BUTTON*/
+.submit {
+    /*border: 1px dashed indianred;*/
+    padding: 0 150px 50px 150px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #295A8C;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background: #295A8C
+}
+
+input[type="submit"]:hover {
+    color: #295A8C;
+    background: #FFFFFF;
+    border: 2px dashed #295A8C;
+}
+
+input[type="submit"]:focus {
+    color: #FFFFFF;
+    background: #7B8EA3;
+    border: 2px solid #7B8EA3;
 }

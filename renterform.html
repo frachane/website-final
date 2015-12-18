@@ -1,133 +1,153 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RENTER FORM</title>
+        <title>RentMail | Renter Form</title>
         <link rel="stylesheet" type="text/css" href="css/renterform.css">
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="js/jquery-ui-1.11.4.custom/jquery-ui.min.css">
-
+        <link rel="icon" href="images/RMfav.png" type="image/png" sizes="16x16">
+        <script src="js/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+        <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script src="js/slider.js"></script>
     </head>
     <body>
-        <div id="canvas">YOLO javascript schtuff</div>
+<!-- LINK TO ACCOUNT PAGE AND LOGOUT SESSION -->
         <header>
+            <a href="account.html" class="account">ACCOUNT</a> |
             <a href="php/logout.php" class="logout">LOG OUT</a>
         </header>
+<!-- JAVASCRIPT CANVAS INTERACTIONS -->
+        <div id="canvas"></div>
+<!-- INSTRUCTIONS -->
         <section class="instruct">
-            HEY (PHP name), LET US KNOW WHAT YOU'RE LOOKING FOR
+            <p>
+                HEY (PHP name), <span>LET US KNOW WHAT YOU'RE LOOKING FOR</span>
+            </p>
         </section>
-        <form action="renter.php" method="POST" name="renterForm">
+<!-- RENTER FORM -->
+        <form action="php/renter.php" method="POST" name="renterForm">
         <section class="page">
+<!-- COLUMN LEFT -->
             <div class="first">
+<!-- PRICE RANGE ~ SLIDER -->
                 <h5>Price Range:</h5>
                 <div id="price">
-                    <input type="text" id="amount" name="amount" readonly style="border:0; color:#295A8C; font-weight:bold;">
+                    <input type="text" id="amount" name="amount">
+                    <!-- readonly style="border:0; color:#295A8C; font-weight:300;" -->
                 </div>
+<!-- LOCATION ~ CHECKBOXES -->
                     <h5>Location:</h5>
                     <ul class="region">
                         <div class="col1">
                             <li><input type="checkbox" id="etobicoke" name="location" value="Etobicoke"/>
-                            <label for="Etobicoke">Etobicoke</label></li>
+                            <label for="etobicoke">Etobicoke</label></li>
                             <li><input type="checkbox" id="york" name="location" value="York"/>
-                            <label for="York">York</label></li>
+                            <label for="york">York</label></li>
                             <li><input type="checkbox" id="north_york" name="location" value="North York" />
-                            <label for="North York">North York</label></li>
+                            <label for="north_york">North York</label></li>
                             <li><input type="checkbox" id="toronto_north" name="location" value="Toronto North" />
-                            <label for="Toronto North">Toronto North</label></li>
+                            <label for="toronto_north">Toronto North</label></li>
                             <li><input type="checkbox" id="toronto_central" name="location" value="Toronto Central" />
-                            <label for="Toronto Central">Toronto Central</label></li>
+                            <label for="toronto_central">Toronto Central</label></li>
                         </div>
-
                         <div class="col2">
                             <li><input type="checkbox" id="toronto_west" name="location" value="Toronto West"/>
-                            <label for="Toronto West">Toronto West</label></li>
+                            <label for="toronto_west">Toronto West</label></li>
                             <li><input type="checkbox" id="toronto_east" name="location" value="Toronto East" />
-                            <label for="Toronto East">Toronto East</label></li>
+                            <label for="toronto_east">Toronto East</label></li>
                             <li><input type="checkbox" id="down_town" name="location" value="Downtown Toronto" />
-                            <label for="Downtown Toronto">Downtown Toronto</label></li>
+                            <label for="down_town">Downtown Toronto</label></li>
                             <li><input type="checkbox" id="east_york" name="location" value="East York" />
-                            <label for="East York">East York</label></li>
+                            <label for="east_york">East York</label></li>
                             <li><input type="checkbox" id="scarborough" name="location" value="Scarborough" />
-                            <label for="Scarborough">Scarborough</label></li>
+                            <label for="scarborough">Scarborough</label></li>
                         </div>
                     </ul>
 
                     <div class="check">
+<!-- BEDROOMS ~ RADIO BUTTONS -->
                     <h5>How many bedrooms?</h5>
                     <ul>
                         <li><input type="radio" id="1bed" name="bedrooms" value="1" />
-                        <label for="1">1</label></li>
+                        <label for="1bed">1</label></li>
                         <li><input type="radio" id="2bed" name="bedrooms" value="2" />
-                        <label for="2">2</label></li>
+                        <label for="2bed">2</label></li>
                         <li><input type="radio" id="3bed" name="bedrooms" value="3" />
-                        <label for="3">3</label></li>
+                        <label for="3bed">3</label></li>
                         <li><input type="radio" id="4bed" name="bedrooms" value="4" />
-                        <label for="4">4</label></li>
+                        <label for="4bed">4</label></li>
                         <li><input type="radio" id="5bed" name="bedrooms" value="5" />
-                        <label for="5">5</label></li>
+                        <label for="5bed">5</label></li>
                     </ul>
-
+<!-- BATHROOMS ~ RADIO BUTTONS -->
                     <h5>How many bathrooms?</h5>
                     <ul class="bath">
                         <li><input type="radio" id="1bath" name="bathrooms" value="1" />
-                        <label for="1">1</label></li>
+                        <label for="1bath">1</label></li>
                         <li><input type="radio" id="2bath" name="bathrooms" value="2" />
-                        <label for="2">2</label></li>
+                        <label for="2bath">2</label></li>
                         <li><input type="radio" id="3bath" name="bathrooms" value="3" />
-                        <label for="3">3</label></li>
+                        <label for="3bath">3</label></li>
                     </ul>
                     </div>
                 </div>
-
+<!-- COLUMN RIGHT -->
             <div class="second">
+<!-- MOVE IN DATE ~ MONTH SELECTION -->
                 <h5>Move in Date:</h5>
-                <select name="month" id="month">
-                    <option disabled selected="selected">Select a month...</option>
-                    <option value="January">January</option>
-                    <option value="February">February</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="July">July</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                </select>
-                <input type="text" name="year" placeholder="ie. 2015" required/>
+                <div class="movein">
+                    <div class="date">
+                        <select name="month" id="month">
+                            <option disabled selected="selected">Select a month...</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+<!-- MOVE IN DATE ~ TEXT INPUT YEAR -->
+                    <div class="year">
+                        <input type="text" name="year" placeholder="ie. 2029" required/>
+                    </div>
+                </div>
 
                 <div class="radio">
+<!-- PETS ~ RADIO BUTTONS -->
                 <h5>Do you want a place that allows pets?</h5>
                 <ul class="pets">
                     <li><input type="radio" id="pets_yes" name="pets" value="yes" />
-                    <label for="yes">YES</label></li>
+                    <label for="pets_yes">YES</label></li>
                     <li><input type="radio" id="pets_no" name="pets" value="no" />
-                    <label for="no">NO</label></li>
+                    <label for="pets_no">NO</label></li>
                 </ul>
-
+<!-- SMOKING ~ RADIO BUTTONS -->
                 <h5>Do you want a place that allows smoking?</h5>
                 <ul class="smoking">
                     <li><input type="radio" id="smoking_yes" name="smoking" value="yes" />
-                    <label for="yes">YES</label></li>
+                    <label for="smoking_yes">YES</label></li>
                     <li><input type="radio" id="smoking_no" name="smoking" value="no" />
-                    <label for="no">NO</label></li>
+                    <label for="smoking_no">NO</label></li>
                 </ul>
                 </div>
-
+<!-- ADDITIONAL COMMENTS ~ TEXT AREA -->
                 <h5>Additional Comments:</h5>
-                <textarea name="comment" id="comment" style="resize:rowsb" rows="5" cols="76" placeholder="ex. sunlight, window view, balcony, floor level"></textarea>
-
+                <div class="comment">
+                    <textarea name="comment" id="comment" rows="5" cols="71" placeholder="ie. sunlight, window view, balcony, floor level"></textarea>
+                </div>
             </div>
         </section>
-
+<!-- SUBMIT TO DATABASE BUTTON -->
         <section class="submit">
             <input type="submit" name="submit" value="SUBMIT" />
         </section>
-
         </form>
-        <script src="js/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
-        <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-        <script src="js/slider.js"></script>
     </body>
 </html>
