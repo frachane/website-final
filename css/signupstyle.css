@@ -95,3 +95,62 @@ input[type="submit"]:focus {
     background: #0F1E38;
     border: 2px solid #0F1E38;
 }
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  input {
+      padding: 10px;
+      margin: 0 100px 25px 100px;
+  }
+
+  .page {
+      /*border: 1px dashed indianred;*/
+      padding: 50px 0 10px 0;
+      margin: 0 0;
+  }
+
+  input[type="submit"] {
+
+      margin: 0 100px;
+  }
+
+  }
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  input {
+      padding: 10px;
+      margin: 0 50px 25px 50px;
+  }
+
+  .page {
+      /*border: 1px dashed indianred;*/
+      padding: 50px 0 10px 0;
+      margin: 0 0;
+  }
+
+  input[type="submit"] {
+
+      margin: 0 50px;
+  }
+
+  }
+
+@media screen and (max-width: 480px){
+  input {
+      padding: 10px;
+      margin: 0 50px 25px 50px;
+  }
+
+  .page {
+      /*border: 1px dashed indianred;*/
+      padding: 50px 0 10px 0;
+      margin: 0 0;
+  }
+
+  input[type="submit"] {
+
+      margin: 0 50px;
+  }
+
+
+}

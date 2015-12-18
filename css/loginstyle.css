@@ -36,7 +36,7 @@ img {
 
 /* LOGIN SECTION */
 .page {
-    border: 1px dashed indianred;
+    /*border: 1px dashed indianred;*/
     padding: 100px 0 50px 0;
     margin: 50px 100px 0 100px;
 }
@@ -44,7 +44,7 @@ img {
 .login {
     display: flex;
     flex-direction: column;
-    border: 1px dashed indianred;
+    /*border: 1px dashed indianred;*/
 }
 
 input {
@@ -89,48 +89,57 @@ input[type="submit"]:focus {
     border: 2px solid #295A8C;
 }
 
-/*@@media screen and (max-width: 480px) {*/
-	 /*0 to 480px
-    .page {
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .page {
+      width:100%;
+      padding: 100px 0 50px 0;
+      margin: 50px 0 50px 0;
+}
 
-        border: 1px dashed indianred;
-        padding: 10px 0 5px 0;
-        margin: 50px 10px 0 10px;
-        width: 100%;
-    }*/
+input {
+    margin: 0 150px 25px 150px;
+}
 
-    /*.login {*/
-        /*display: flex;
-        flex-direction: column;
-        border: 1px dashed indianred;*/
-    /*}*/
-
-    /*input {*/
-        /*width: 100%;*/
-    /*}*/
-/*}*/
-
-@media screen and (min-width: 769px) and (max-width: 999px) {
-    .page {
-        border: 1px dashed indianred;
-        padding: 100px 0 50px 0;
-        margin: 50px 10px 0 10px;
-    }
-
-    .login {
-        display: flex;
-        flex-direction: column;
-        border: 1px dashed indianred;
-    }
+input[type="submit"] {
+    padding: 10px 50px;
+    margin: 0 150px;
+}
+  }
 
 
-    input {
-        margin: 0px 100px 25px 100px;
-    }
+@media screen and (min-width: 480px) and (max-width: 768px) {
 
-    input[type="submit"] {
-        padding: 10px 50px;
-        margin: 0 100px;
-    }
+  .page {
+      width:100%;
+      padding: 100px 0 50px 0;
+      margin: 50px 0 50px 0;
+}
+
+input {
+    margin: 0 50px 25px 50px;
+}
+
+input[type="submit"] {
+    padding: 10px 50px;
+    margin: 0 50px;
+}
+  }
+
+@media screen and (max-width: 480px){
+
+  .page {
+      width:100%;
+      padding: 100px 0 50px 0;
+      margin: 50px 0 50px 0;
+}
+
+input {
+    margin: 0 20px 25px 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 50px;
+    margin: 0 20px;
+}
 
 }
