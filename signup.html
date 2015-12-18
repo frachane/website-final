@@ -18,11 +18,11 @@
             <p>
                 MAKE AN ACCOUNT
             </p>
-            <form class="signup" action="" method="POST">
-                <input type="text" placeholder="First Name" required />
-                <input type="text" placeholder="Last Name" required />
-                <input type="email" placeholder="Email Address" required />
-                <input type="password" placeholder="Password" required />
+            <form class="signup" action="php/signup.php" method="POST">
+                <input type="text" name= "first_name"  placeholder="First Name" required />
+                <input type="text" name= "last_name" placeholder="Last Name" required />
+                <input type="email" name= "email" placeholder="Email Address" required />
+                <input type="password" name="password" placeholder="Password" required />
                 <input type="submit" name="submit" value="SIGN UP" />
             </form>
         </section>

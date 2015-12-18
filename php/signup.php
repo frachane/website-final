@@ -57,7 +57,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 //I'm just going to kill the script completely, as error handling is outside
 //the scope of this tutorial.
 if($row['num'] > 0){
-     echo 'Email has been taken';
+    header( 'Location: login.html' );
  }
 else{
     //
@@ -82,7 +82,7 @@ else{
     // //If the signup process is successful.
     if($result){
         //What you do here is up to you!
-         header( 'Location: select.html' );
+         header( 'Location: ../select.html' );
         }
 
     // when creating a new user record, the db returns the id of the newly created record
