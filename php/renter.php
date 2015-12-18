@@ -6,7 +6,8 @@
     error_reporting(E_ALL);
 
     session_start();
-    // $uid = $_SESSION['uid'];
+    $uid = $_SESSION['uid'];
+
 
     //Connecting to page
     if( isset($_POST) && isset($_POST["amount"])) {
@@ -60,14 +61,14 @@
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
-    // //Inserting data into table `uid`,
-    $sql = "INSERT INTO `renter` ( `min`, `max`, `location`, `month`, `year`, `bedrooms`, `bathrooms`, `pets`, `smoking`, `comment`)
-    VALUES ( :min, :max, :location, :month, :year, :bedrooms, :bathrooms, :pets, :smoking, :comment)";
+    // //Inserting data into table
+    $sql = "INSERT INTO `renter` (`uid`, `min`, `max`, `location`, `month`, `year`, `bedrooms`, `bathrooms`, `pets`, `smoking`, `comment`)
+    VALUES (:uid,:min, :max, :location, :month, :year, :bedrooms, :bathrooms, :pets, :smoking, :comment)";
 
-    // //and sanitive :uid,
+    // //and sanitive
     $stmt = $dbh->prepare($sql);
     //Bind paramters
-    // $stmt->bindParam(':uid', $uid);
+    $stmt->bindParam(':uid', $uid);
     $stmt->bindParam(':min', $min);
     $stmt->bindParam(':max', $max);
     $stmt->bindParam(':location', $location);

@@ -6,7 +6,7 @@
     error_reporting(E_ALL);
 
     session_start();
-    // $uid = $_SESSION['uid']; FIXME
+    $uid = $_SESSION['uid'];
 
 
     //Connecting to page
@@ -67,15 +67,15 @@
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
-    // //Inserting data into table `uid`, FIXME
-    $sql = "INSERT INTO `lister` ( `address`, `region`, `phone`, `postal`, `price`, `month`, `year`, `bedrooms`, `bathrooms`, `pets`, `smoking`, `comment`)
-    VALUES ( :address, :region, :phone, :postal, :price, :month, :year, :bedrooms, :bathrooms, :pets, :smoking, :comment)";
+    // //Inserting data into table
+    $sql = "INSERT INTO `lister` (`uid`,  `address`, `region`, `phone`, `postal`, `price`, `month`, `year`, `bedrooms`, `bathrooms`, `pets`, `smoking`, `comment`)
+    VALUES (:uid,  :address, :region, :phone, :postal, :price, :month, :year, :bedrooms, :bathrooms, :pets, :smoking, :comment)";
 
-    // //and sanitive :uid, FIXME
+    // //and sanitive
     $stmt = $dbh->prepare($sql);
     //Bind paramters
 
-    // $stmt->bindParam(':uid', $uid);
+    $stmt->bindParam(':uid', $uid);
     $stmt->bindParam(':address', $address);
     $stmt->bindParam(':region', $ary);
     $stmt->bindParam(':phone', $phone);
@@ -87,7 +87,7 @@
     $stmt->bindParam(':bathrooms', $bathrooms);
     $stmt->bindParam(':pets', $pets);
     $stmt->bindParam(':smoking', $smoking);
-    $stmt->bindParam(':comment', $comment); /*FIXME*/
+    $stmt->bindParam(':comment', $comment); 
 
     //execute SQL
     $stmt->execute();
