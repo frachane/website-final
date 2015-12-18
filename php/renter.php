@@ -82,6 +82,7 @@
 
     //execute SQL
     $stmt->execute();
+     header( 'Location: compare.php' )
 
 
 
