@@ -9,6 +9,9 @@
         <script src="js/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
         <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
         <script src="js/slider.js"></script>
+        <script type="text/javascript" src="js/zim_1.4.4.js"></script>
+        <script type="text/javascript" src="js/createjs-2015.05.21.min.js"></script>
+        <script type="text/javascript" src="js/renterform.js"></script>
     </head>
     <body>
 <!-- LINK TO LOGOUT SESSION -->
@@ -16,7 +19,9 @@
             <a href="php/logout.php" class="logout">LOG OUT</a>
         </header>
 <!-- JAVASCRIPT CANVAS INTERACTIONS -->
-        <div id="canvas"></div>
+          <div id="header">
+          <canvas id="myCanvas"></canvas>
+          </div>
 <!-- INSTRUCTIONS -->
         <section class="instruct">
             <p>
@@ -67,26 +72,26 @@
 <!-- BEDROOMS ~ RADIO BUTTONS -->
                     <h5>How many bedrooms?</h5>
                     <ul>
-                        <li><input type="radio" id="1bed" name="bedrooms" value="1" />
-                        <label for="1bed">1</label></li>
-                        <li><input type="radio" id="2bed" name="bedrooms" value="2" />
-                        <label for="2bed">2</label></li>
-                        <li><input type="radio" id="3bed" name="bedrooms" value="3" />
-                        <label for="3bed">3</label></li>
-                        <li><input type="radio" id="4bed" name="bedrooms" value="4" />
-                        <label for="4bed">4</label></li>
-                        <li><input type="radio" id="5bed" name="bedrooms" value="5" />
-                        <label for="5bed">5</label></li>
+                        <li><input type="radio" id="oneBed" name="bedrooms" value="1" />
+                        <label for="oneBed">1</label></li>
+                        <li><input type="radio" id="twoBed" name="bedrooms" value="2" />
+                        <label for="twoBed">2</label></li>
+                        <li><input type="radio" id="threeBed" name="bedrooms" value="3" />
+                        <label for="threeBed">3</label></li>
+                        <li><input type="radio" id="fourBed" name="bedrooms" value="4" />
+                        <label for="fourBed">4</label></li>
+                        <li><input type="radio" id="fiveBed" name="bedrooms" value="5" />
+                        <label for="fiveBed">5</label></li>
                     </ul>
 <!-- BATHROOMS ~ RADIO BUTTONS -->
                     <h5>How many bathrooms?</h5>
                     <ul class="bath">
-                        <li><input type="radio" id="1bath" name="bathrooms" value="1" />
-                        <label for="1bath">1</label></li>
-                        <li><input type="radio" id="2bath" name="bathrooms" value="2" />
-                        <label for="2bath">2</label></li>
-                        <li><input type="radio" id="3bath" name="bathrooms" value="3" />
-                        <label for="3bath">3</label></li>
+                        <li><input type="radio" id="oneBath" name="bathrooms" value="1" />
+                        <label for="oneBath">1</label></li>
+                        <li><input type="radio" id="twoBath" name="bathrooms" value="2" />
+                        <label for="twoBath">2</label></li>
+                        <li><input type="radio" id="threeBath" name="bathrooms" value="3" />
+                        <label for="threeBath">3</label></li>
                     </ul>
                     </div>
                 </div>
