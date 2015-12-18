@@ -14,20 +14,16 @@
     /* #0B081F */
 }
 
-/* LINK TO ACCOUNT PAGE AND LOGOUT SESSION */
+/* LINK TO LOGOUT SESSION */
 header {
     text-align: right;
     /*border: 1px dashed indianred;*/
     margin: 5px 100px 50px 0;
 }
 
-.account, .logout {
+.logout {
     font-weight: 400;
     text-decoration: none;
-}
-
-.account:hover {
-    color: #295A8C;
 }
 
 .logout:hover {
@@ -66,7 +62,7 @@ header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    border: 1px dashed indianred;
+    /*border: 1px dashed indianred;*/
 }
 
 h5 {
@@ -77,19 +73,19 @@ h5 {
 }
 
 .first {
-    border: 1px dashed indianred;
+    /*border: 1px dashed indianred;*/
     margin: 0 12.5px 15px 150px;
     width: 50%;
 }
 
 .second {
-    border: 1px dashed indianred;
+    /*border: 1px dashed indianred;*/
     margin: 0 150px 15px 12.5px;
     width: 50%;
 }
 
 .col1, .col2 {
-    border: 1px dashed indianred;
+    /*border: 1px dashed indianred;*/
     width: 50%;
 }
 
