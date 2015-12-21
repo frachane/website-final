@@ -29,13 +29,9 @@ header {
 
 /* JAVASCRIPT CANVAS */
 #myCanvas {
-    /*margin: auto;*/
-    /*display: flex;
-    flex-wrap: wrap;
-    justify-content: center;*/
     width: 100%;
     height: 200px;
-    /*background: indianred;*/
+    border: 1px dashed indianred;
 }
 
 /* LOGIN AND SIGN UP BUTTON LINKS */
@@ -103,20 +99,13 @@ span {
     color: #295A8C;
 }
 
-/*@media screen and (min-width: 768px) and (max-width: 999px) {
 
-
-}*/
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  #top{
-    width: 100%;
-    height: 100%;
-  }
-  #canvas{
-    width: 100%;
-    height: 100%;
-  }
+  /*#top{
+    width: 75%;
+    height: 50px;
+  }*/
   .info{
       width: 90%;
       text-align: center;
@@ -143,29 +132,24 @@ span {
   }
 
 @media screen and (max-width: 480px){
-  #top{
-    width: 100%;
-    height: 100%;
-  }
-  #canvas{
+  /*#top{
+    width: 40%;
+    height: 50px;
+  }*/
+  #myCanvas{
     width: 100%;
     height: 100%;
   }
   .info{
       width: 90%;
       text-align: center;
-      /*margin-right:2000px;*/
       margin-left:40px;
-      /*border: 1px dashed indianred;*/
   }
 
   .info p {
       text-align: center;
       font-size: 19px;
       padding: 0 auto;
-      /*margin-left: 20px;*/
-      /*margin-left:10px;*/
-
       width: 90%;
     }
 
